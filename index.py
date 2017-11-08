@@ -33,17 +33,17 @@ print(multiplication_result)
 
 # declaring an array/list ordered & mutable
 array_grades = [77, 80, 90, 95, 100, 105, 107]  # ordered and mutable
-array_grades.append(200)
+array_grades.append(200)  # adding a value in the last value
 
 
 # declaring a tuple
 tuple_grades = (77, 80, 90, 95, 100, 105, 107)  # ordered and immutable
-tuple_grades = tuple_grades + (200,)
+tuple_grades = tuple_grades + (200,)  # because it's immutable so create new!
 
 
 # declaring a set
 set_grades = {77, 80, 90, 95, 100, 105, 107}  # unordered and mutable
-set_grades.add(200)
+set_grades.add(200)  # adding a value into unordered set of collection
 
 
 # declaring a method to find mean of an array & tuple
