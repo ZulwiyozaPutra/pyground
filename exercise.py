@@ -6,11 +6,11 @@ names_list = []
 def who_do_you_know():
     names = input("Who do you know? \n")
     if type(names) is str:
-        for name in names.split():
-            names_list.append(name)
+        for name in names.split(","):
+            names_list.append(name.strip())
         ask_user()
     else:
-        print("Please input a sequence of name separated by space \n")
+        print("Please input a sequence of name separated by coma and space \n")
         sys.exit()
 
 
