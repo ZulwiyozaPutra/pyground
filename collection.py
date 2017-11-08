@@ -1,34 +1,3 @@
-# declaring variable
-my_variable = "this is a string variable"
-
-
-# declaring a method
-def hello_world():
-    print("Hellow World!")
-
-
-# run a method
-hello_world()
-
-
-# declaring a method with argument
-def hello(my_name):
-    print("Hello %s!" % my_name)
-
-
-# run a method with argument
-hello("Putra")
-
-
-# declaring multi argument method
-def multiply(num1, num2):
-    return num1 * num2
-
-
-# run a multi argument method
-multiplication_result = multiply(2, 3)
-print(multiplication_result)
-
 # collection
 
 # declaring an array/list ordered & mutable
@@ -63,3 +32,20 @@ print(grades_mean_from_array)
 
 grades_mean_from_tuple = mean_from_tuple(tuple_grades)
 print(grades_mean_from_tuple)
+
+
+# Set operations
+your_nums = {1, 2, 3, 4, 5}
+winning_nums = {1, 3, 5, 7, 9, 11}
+
+# intersection
+your_winning_nums = your_nums.intersection(winning_nums)
+# -> will return 1, 3, and 5
+
+# union
+all_nums = your_nums.union(winning_nums)
+# -> will return 1, 2, 3, 4, 5, 7, 9, and 11
+
+# difference
+lose_nums = your_nums.difference(winning_nums)
+# -> will return 2, 4, 7, 9, and 11
